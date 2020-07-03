@@ -1,0 +1,20 @@
+@import "utils";
+@import "reset";
+@import "blocks";
+@import "header";
+@import "about";
+@import "expertise";
+@import "service";
+@import "goals";
+@import "reviews";
+@import "vision";
+@import "footer";
+
+body {
+  font-family: Poppins, sans-serif;
+  background: $c-gray;
+}
+
+.section:last-child {
+  background: #fff;
+}

@@ -1,0 +1,32 @@
+.about {
+  padding: 148px 50px;
+
+  @media (max-width: 600px ) {
+    padding: 60px 50px;
+  }
+
+  @media (max-width: 400px ) {
+    padding: 30px;
+  }
+
+  &__subtitle {
+    margin: 0 auto 16px;
+    max-width: 754px;
+    line-height: 48px;
+    color: #253757;
+
+    @media (max-width: 600px ) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    max-width: 754px;
+    margin: 0 auto;
+    line-height: 36px;
+
+    @media (max-width: 600px ) {
+      font-size: 20px;
+    }
+  }
+}
