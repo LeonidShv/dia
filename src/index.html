@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dia</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Poppins:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600%7CPoppins:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+    <script src="scripts/main.js"></script>
   </head>
   <body>
     <header class="header">
-      <a name="home"></a>
-      <nav class="nav">
+      <nav id="home" class="nav">
         <a href="#" class="logo nav__logo">
           <img src="images/logo/dia-logo.svg" alt="dia-logo">
         </a>
@@ -44,7 +43,6 @@
       </nav>
 
       <div class="header__info">
-        <a name="home"></a>
         <h1 class="header__title">Strategic Agency</h1>
         <p class="header__text text">
           We believe in the power of bold ideas that can solve business challenges.
@@ -53,14 +51,14 @@
       </div>
 
       <div class="carousel">
-        <img src="images/slider/slider1.png" class="a carousel__img carousel__img_active" alt="">
-        <img src="images/slider/slider2.jpg" class="carousel__img" alt="">
-        <img src="images/slider/slider3.jpg" class="carousel__img" alt="">
-        <img src="images/slider/slider4.jpg" class="carousel__img" alt="">
-        <img src="images/slider/slider5.jpg" class="carousel__img" alt="">
+        <img src="images/slider/slider1.png" class="fade carousel__img carousel__img_active" alt="slide one">
+        <img src="images/slider/slider2.jpg" class="fade carousel__img" alt="slide two">
+        <img src="images/slider/slider3.jpg" class="fade carousel__img" alt="slide three">
+        <img src="images/slider/slider4.jpg" class="fade carousel__img" alt="slide four">
+        <img src="images/slider/slider5.jpg" class="fade carousel__img" alt="slide five">
         <div class="carousel__inner">
-          <h3 class="carousel__title">intro</h3>
-          <p class="carousel__text text">By the same illusion which lifts the horizon.</p>
+          <h3 class="carousel__title">Inspiration</h3>
+          <p class="carousel__text text">The future belongs to those, who believe in beauty of their dreams</p>
           <a href="" class="carousel__control carousel__control_next"></a>
           <a href="" class="carousel__control carousel__control_prev"></a>
         </div>
@@ -68,8 +66,7 @@
     </header>
 
     <main>
-      <section class="section">
-        <a name="about"></a>
+      <section id="about" class="section">
         <div class="about">
           <h3 class="subtitle about__subtitle">Who we are</h3>
           <p class="text about__text" >
@@ -87,7 +84,7 @@
 
           <div class="expertise__row-cards cards">
             <div class="expertise__card card">
-              <img src="images/what-we-do-1.jpg" class="card__img" alt="">
+              <img src="images/what-we-do-1.jpg" class="card__img" alt="expertise image one">
               <h4 class="card__subtitle">Branding</h4>
               <p class="text card__text">We create additional value for companies,
                 products, services as well as verbal and visual ways to
@@ -96,7 +93,7 @@
             </div>
 
             <div class="expertise__card card">
-              <img src="images/what-we-do-2.jpg" class="card__img" alt="">
+              <img src="images/what-we-do-2.jpg" class="card__img" alt="expertise image two">
               <h4 class="card__subtitle">Communication</h4>
               <p class="text card__text">We strive to create communications that
                 can increase media performance. We use everything — words, meanings,
@@ -105,7 +102,7 @@
             </div>
 
             <div class="expertise__card card">
-              <img src="images/what-we-do-3.jpg" class="card__img" alt="">
+              <img src="images/what-we-do-3.jpg" class="card__img" alt="expertise image three">
               <h4 class="card__subtitle">Strategy</h4>
               <p class="text card__text">We create business growth strategies, from the
                 moment of its birth to the achievement of the necessary
@@ -115,9 +112,8 @@
           </div>
         </div>
       </section>
-      <section class="section">
+      <section id="service" class="section">
         <div class="service">
-          <a name="service"></a>
           <div class="info service__info">
             <p class="sup-text service__sup-text">Process</p>
             <h2 class="subtitle service__subtitle">
@@ -139,8 +135,10 @@
               <p class="text service__text-card">
                 Brand Development Copywriting Logo & Webite Design Packaging
               </p>
-              <a href="" class="service__control"></a>
-              <a href="" class="service__link">Learn more</a>
+              <button class="service__card-btn">
+                <span class="service__control"></span>
+                <span class="service__link">Learn more</span>
+              </button>
             </div>
 
             <div class="service__card">
@@ -148,8 +146,10 @@
               <p class="text service__text-card">
                 Brand Development Copywriting Logo & Webite Design Packaging
               </p>
-              <a href="" class="service__control"></a>
-              <a href="" class="service__link">Learn more</a>
+              <button class="service__card-btn">
+                <span class="service__control"></span>
+                <span class="service__link">Learn more</span>
+              </button>
             </div>
 
             <div class="service__card">
@@ -157,8 +157,10 @@
               <p class="text service__text-card">
                 Brand Development Copywriting Logo & Webite Design Packaging
               </p>
-              <a href="" class="service__control"></a>
-              <a href="" class="service__link">Learn more</a>
+              <button class="service__card-btn">
+                <span class="service__control"></span>
+                <span class="service__link">Learn more</span>
+              </button>
             </div>
 
             <div class="service__card">
@@ -166,35 +168,36 @@
               <p class="text service__text-card">
                 Brand Development Copywriting Logo & Webite Design Packaging
               </p>
-              <a href="" class="service__control"></a>
-              <a href="" class="service__link">Learn more</a>
+              <button class="service__card-btn">
+                <span class="service__control"></span>
+                <span class="service__link">Learn more</span>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="goals">
-          <a name="work"></a>
+        <div id="work" class="goals">
           <div class="goals__info">
             <p class="sup-text goals__sup-text">Approach</p>
             <h2 class="subtitle goals__subtitle">
               We strive to create meaningful projects
             </h2>
 
-            <a href="" class="goals__control"></a>
+            <span class="goals__control"></span>
             <p class="text goals__text-info">
               We are sure that the brands built on a strong strategy,
               big ideas and simple human values always win. Only such brands change the game.
             </p>
 
-            <a href="" class="goals__control"></a>
+            <span class="goals__control"></span>
             <p class="text goals__text-info">
               No one can realize the idea as its creators.
               Therefore, we set up agency-based photo and video production departments.
             </p>
 
-            <a href="" class="goals__control"></a>
+            <span class="goals__control"></span>
             <p class="text goals__text-info goals__text-info_bottom">
               We strive to create meaningful projects that make brands
               valuable, and the world around us more aesthetic.
@@ -214,7 +217,12 @@
 
           <div class="reviews__row-cards">
             <div class="reviews__card card">
-              <img src="images/reviews1.png" class="card__img-reviews" alt="">
+              <div class="card__rectangle card__rectangle_1"></div>
+              <img src="images/reviews1.png" class="card__img-reviews" alt="reviews image one">
+              <div class="card__rectangle card__rectangle_2"></div>
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__quotes">
+                <path d="M0 18.48C0 17.36 0 16.24 0 15.12C0 13.9533 0 12.81 0 11.69C0 8.09667 0.513333 5.27334 1.54 3.22C2.56667 1.16667 4.36333 0.0933349 6.93 0L8.26 2.73C6.81333 2.87 5.81 3.57 5.25 4.83C4.73667 6.04333 4.48 7.98 4.48 10.64H8.19V18.48H0ZM12.32 18.48C12.32 17.36 12.32 16.24 12.32 15.12C12.32 13.9533 12.32 12.81 12.32 11.69C12.32 8.09667 12.8333 5.27334 13.86 3.22C14.8867 1.16667 16.6833 0.0933349 19.25 0L20.58 2.73C19.1333 2.87 18.13 3.57 17.57 4.83C17.0567 6.04333 16.8 7.98 16.8 10.64H20.51V18.48H12.32Z" fill="#2060f6"></path>
+              </svg>
               <p class="text card__text-reviews">AIR’s ideas are refreshing and out of the box.
                 Authentic team that focuses on the important path of the brand.
               </p>
@@ -223,7 +231,12 @@
             </div>
 
             <div class="reviews__card card">
-              <img src="images/reviews2.png" class="card__img-reviews" alt="">
+              <div class="card__rectangle card__rectangle_1"></div>
+              <img src="images/reviews2.png" class="card__img-reviews" alt="reviews image two">
+              <div class="card__rectangle card__rectangle_2"></div>
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__quotes">
+                <path d="M0 18.48C0 17.36 0 16.24 0 15.12C0 13.9533 0 12.81 0 11.69C0 8.09667 0.513333 5.27334 1.54 3.22C2.56667 1.16667 4.36333 0.0933349 6.93 0L8.26 2.73C6.81333 2.87 5.81 3.57 5.25 4.83C4.73667 6.04333 4.48 7.98 4.48 10.64H8.19V18.48H0ZM12.32 18.48C12.32 17.36 12.32 16.24 12.32 15.12C12.32 13.9533 12.32 12.81 12.32 11.69C12.32 8.09667 12.8333 5.27334 13.86 3.22C14.8867 1.16667 16.6833 0.0933349 19.25 0L20.58 2.73C19.1333 2.87 18.13 3.57 17.57 4.83C17.0567 6.04333 16.8 7.98 16.8 10.64H20.51V18.48H12.32Z" fill="#2060f6"></path>
+              </svg>
               <p class="text card__text-reviews">AIR is an exceptional agency that leads with creative talent,
                 first-class account servicing.
               </p>
@@ -232,7 +245,12 @@
             </div>
 
             <div class="reviews__card card">
-              <img src="images/reviews3.png" class="card__img-reviews" alt="">
+              <div class="card__rectangle card__rectangle_1"></div>
+              <img src="images/reviews3.png" class="card__img-reviews" alt="reviews image three">
+              <div class="card__rectangle card__rectangle_2"></div>
+              <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="card__quotes">
+                <path d="M0 18.48C0 17.36 0 16.24 0 15.12C0 13.9533 0 12.81 0 11.69C0 8.09667 0.513333 5.27334 1.54 3.22C2.56667 1.16667 4.36333 0.0933349 6.93 0L8.26 2.73C6.81333 2.87 5.81 3.57 5.25 4.83C4.73667 6.04333 4.48 7.98 4.48 10.64H8.19V18.48H0ZM12.32 18.48C12.32 17.36 12.32 16.24 12.32 15.12C12.32 13.9533 12.32 12.81 12.32 11.69C12.32 8.09667 12.8333 5.27334 13.86 3.22C14.8867 1.16667 16.6833 0.0933349 19.25 0L20.58 2.73C19.1333 2.87 18.13 3.57 17.57 4.83C17.0567 6.04333 16.8 7.98 16.8 10.64H20.51V18.48H12.32Z" fill="#2060f6"></path>
+              </svg>
               <p class="text card__text-reviews">AIR raises the agency bar to stratospheric heights on both
                 creative output and client service.
               </p>
@@ -258,6 +276,7 @@
           <div class="clip clip_b"></div>
           <div class="clip clip_s"></div>
           <div class="clip clip_s"></div>
+          
           <h2 class="subtitle vision__subtitle">
             Vision, Passion, Results
           </h2>
@@ -270,10 +289,8 @@
         </div>
       </section>
 
-      <section class="section">
-        <a name="contact"></a>
-        <a name="hire_us"></a>
-        <div class="footer">
+      <section id="hire_us" class="section">
+        <div id="contact" class="footer">
           <div class="footer__wrape">
             <div class="form footer__form">
               <h2 class="subtitle footer__subtitle">
@@ -327,16 +344,13 @@
             </div>
           </div>
 
-
-
           <nav class="nav nav__footer">
             <ul class="nav__list nav__list-footer">
-
-              <li class="nav__item nav__item-footer">
-                <a href="#about" class="nav__link">About us</a>
-              </li>
               <li class="nav__item nav__item-footer">
                 <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item nav__item-footer">
+                <a href="#about" class="nav__link">About us</a>
               </li>
               <li class="nav__item nav__item-footer">
                 <a href="#work" class="nav__link">Work</a>
@@ -345,17 +359,12 @@
                 <a href="#service" class="nav__link">Services</a>
               </li>
               <li class="nav__item nav__item-footer">
-                <a href="contact" class="nav__link">Contact Us</a>
+                <a href="#contact" class="nav__link">Contact Us</a>
               </li>
             </ul>
           </nav>
-
-
         </div>
       </section>
-
-
     </main>
-    <script src="scripts/main.js"></script>
   </body>
 </html>

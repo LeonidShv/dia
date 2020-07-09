@@ -32,12 +32,12 @@
 
 .card {
   &__img {
-    border-radius: 10px;
-    width: 184px;
-    height: 166px;
-    object-fit: cover;
     display: block;
     margin: 0 auto 23px;
+    width: 184px;
+    height: 166px;
+    border-radius: 10px;
+    object-fit: cover;
 
     @media (max-width: 1000px) {
       & {
@@ -62,13 +62,13 @@
   }
 
   &__subtitle {
+    margin-bottom: 16px;
     font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
     color: #253757;
-    margin-bottom: 16px;
 
     @media (max-width: 1000px) {
       & {

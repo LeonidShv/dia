@@ -70,6 +70,12 @@
     border-bottom: 2px solid #5f6570;
     background: #2c2c2c;
     color: #fff;
+    transition: border-color 0.7s;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #1c55db;
+    }
 
     @media (max-width: 1200px) {
       & {
@@ -117,6 +123,12 @@
     justify-content: space-between;
     margin: 0;
     width: 1000px;
+
+    @media (min-width: 1400px) {
+      &:first-child {
+        margin-left: -35px;
+      }
+    }
   }
 
   &__logo-footer {

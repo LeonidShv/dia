@@ -1,13 +1,11 @@
 module.exports = {
     "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "jquery": true
-  },
+        "browser": true,
+        "es2020": true,
+        "jquery": true
+    },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+        "eslint:recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,9 +14,6 @@ module.exports = {
         "ecmaVersion": 11,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
     }
 };

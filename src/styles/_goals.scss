@@ -1,11 +1,11 @@
 .goals {
+  display: flex;
+  justify-content: space-between;
   margin-left: 6.7%;
   margin-top: -88px;
   padding: 204px 0 0;
-  display: flex;
-  justify-content: space-between;
-  background: #2c2c2c;
   border-radius: 30px 0 0 30px;
+  background: #2c2c2c;
 
   @media (max-width: 1400px) {
     & {
@@ -94,10 +94,10 @@
 
   &__img {
     display: block;
+    margin-top: auto;
     width: 46.5%;
     height: 83%;
     object-fit: cover;
-    margin-top: auto;
 
     @media (max-width: 1200px) {
       & {
@@ -107,6 +107,8 @@
   }
 
   &__info {
+    margin-left: 70px;
+    
     @media (max-width: 1200px) {
       & {
         margin: 0 auto;
